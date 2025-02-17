@@ -14,16 +14,18 @@ import {
     IonTitle, 
     IonToolbar 
 } from '@ionic/react'
-import {homeOutline, logOutOutline, rocketOutline} from 'ionicons/icons';
+import {homeOutline, logOutOutline, rocketOutline, optionsOutline} from 'ionicons/icons';
 import { Redirect, Route } from 'react-router';
 import Home from './Home';
 import About from './About';
 import Details from './Details';
+import Radio from './Radio';
 
 const Menu: React.FC = () => {
   const path = [
       {name:'Home', url: '/it35-lab/app/Home', icon: homeOutline},
       {name:'About', url: '/it35-lab/app/About', icon: rocketOutline},
+      { name: 'Radio', url: '/it35-lab/app/Radio', icon: optionsOutline },
   ]
 
   return (
@@ -60,9 +62,11 @@ const Menu: React.FC = () => {
                   <Route exact path="/it35-lab/app/Home" component={Home} />
                   <Route exact path="/it35-lab/app/Home/Details" component={Details} />
                   <Route exact path="/it35-lab/app/About" component={About} />
+                  <Route exact path="/it35-lab/app/Radio" component={Radio} />
 
                   <Route exact path="/it35-lab/app">
                       <Redirect to="/it35-lab/app/Home"/>
+                     
                   </Route>
               </IonRouterOutlet>
 
