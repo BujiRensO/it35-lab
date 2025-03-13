@@ -7,7 +7,8 @@ import {
       IonPage, 
       IonTitle, 
       IonToolbar, 
-      useIonRouter
+      useIonRouter,
+      IonInput, IonInputPasswordToggle
   } from '@ionic/react';
   
   const Login: React.FC = () => {
@@ -23,6 +24,11 @@ import {
           </IonToolbar>
         </IonHeader>
         <IonContent className='ion-padding'>
+        <IonInput label="Username"></IonInput>
+    
+        <IonInput type="password" label="Password" value="NeverGonnaGiveYouUp">
+      <IonInputPasswordToggle slot="end"></IonInputPasswordToggle>
+    </IonInput>
             <IonButton onClick={() => doLogin()} expand="full">
                 Login
             </IonButton>
@@ -32,3 +38,5 @@ import {
   };
   
   export default Login;
+
+  
