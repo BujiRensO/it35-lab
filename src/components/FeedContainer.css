@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.fontstyle1{
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size:large;
+    color: rgb(244, 171, 0);
+    text-shadow: 50px;
+
+}

@@ -4,6 +4,8 @@ import { User } from '@supabase/supabase-js';
 import { supabase } from '../utils/supabaseClient';
 import { colorFill, pencil, trash } from 'ionicons/icons';
 
+import './FeedContainer.css';
+
 interface Post {
   post_id: string;
   user_id: number;
@@ -121,7 +123,7 @@ const FeedContainer = () => {
             <>
             <IonCard>
                 <IonCardHeader>
-                    <IonCardTitle>Create Post</IonCardTitle>
+                    <IonCardTitle class='fontstyle1'>Create Post</IonCardTitle>
                 </IonCardHeader>
                 <IonCardContent>
                     <IonInput value={postContent} onIonChange={e => setPostContent(e.detail.value!)} placeholder="Write a post..." />
