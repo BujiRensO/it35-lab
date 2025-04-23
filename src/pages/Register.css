@@ -1,0 +1,127 @@
+/* General styles for registration page */
+.registration-content {
+    background-color: #fff7e0;
+    color: #333;
+  }
+  
+  .registration-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #ff6600;
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields styling */
+  .input-field {
+    --highlight-color-focused: #ff6600;
+    --border-color: #ffb366;
+    width: 100%;
+    --placeholder-color: #ff9f66;
+    border-radius: 10px;
+  }
+  
+  .password-input input {
+    color: #ff6600;
+  }
+  
+  .input-field::placeholder {
+    color: #ff6600;
+  }
+  
+  .input-field[fill="outline"] {
+    border: 2px solid #ff6600;
+  }
+  
+  .input-field:focus {
+    border-color: #ff6600;
+  }
+  
+  /* Buttons styling */
+  .register-button {
+    background-color: #ff6600;
+    color: white;
+    margin-top: 15px;
+  }
+  
+  .signin-button {
+    margin-top: 15px;
+    color: #ff6600;
+  }
+  
+  /* Modal styling */
+  .modal-content {
+    padding: 20px;
+    background-color: #232323;
+    
+  }
+  
+  .modal-card {
+    background-color: #232323;
+    max-height: fit-content;
+  }
+  
+  .modal-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5px;
+    background-color: #232323;
+  }
+  
+  .success-modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+  }
+  
+  .success-title {
+    color: #ff6600;
+    font-size: 2rem;
+  }
+  
+
+  .registration-details-header {
+    background-color: #232323;
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6600;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .card-divider {
+    border: 1px solid #ff6600;
+    margin-bottom: 15px;
+  }
+  
+  /* Subtitle styling */
+  .card-subtitle {
+    font-size: 1.1rem;
+    color: #ff6600;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  /* Card details styling */
+  .card-detail {
+    font-size: 1.2rem;
+    color: #fba973;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  .login-button {
+    --background: #ff6600;
+    --color: white;
+    --background-hover: #e65c00;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 12px;
+    box-shadow: 0 1px 5px rgba(255, 102, 0, 0.4);
+  }

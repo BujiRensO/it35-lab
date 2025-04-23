@@ -121,20 +121,20 @@ const FeedContainer = () => {
         <IonContent>
           {user ? (
             <>
-            <IonCard>
+            <IonCard className='post-card'>
                 <IonCardHeader>
-                    <IonCardTitle class='fontstyle1'>Create Post</IonCardTitle>
+                    <IonCardTitle class='fontstyle1 post-title'>Create Post</IonCardTitle>
                 </IonCardHeader>
                 <IonCardContent>
                     <IonInput value={postContent} onIonChange={e => setPostContent(e.detail.value!)} placeholder="Write a post..." />
                 </IonCardContent>
-                <div style={{ display: 'flex', justifyContent: 'flex-end', padding: '0.5rem' }}>
-                    <IonButton onClick={createPost}>Post</IonButton>
-                </div>
-            </IonCard>
+                <div className="post-button-container">
+        <IonButton className="post-button" onClick={createPost}>Post</IonButton>
+      </div>
+            </IonCard> 
 
               {posts.map(post => (
-                <IonCard key={post.post_id} style={{ marginTop: '2rem' }}>
+                <IonCard className='post-card2' key={post.post_id} style={{ marginTop: '2rem' }}>
                 <IonCardHeader>
                   <IonRow>
                     <IonCol size="1.85">
@@ -159,7 +159,7 @@ const FeedContainer = () => {
                 </IonCardHeader>
               
                 <IonCardContent>
-                    <IonText style={{ color: 'black' }}>
+                    <IonText style={{ color: 'white' }}>
                         <h1>{post.post_content}</h1>
                     </IonText>
                 </IonCardContent>
