@@ -1,0 +1,43 @@
+.tabs-bar {
+    background-color: #ffffff; 
+    border-top: 1px solid #dddddd; }
+  
+  
+  .tab-button {
+    --color-selected: #ff6600; 
+    --color: #666666; 
+    --color-hover: #ff6600;
+  
+  }
+  
+  
+  .tab-icon {
+    font-size: 20px;
+    color: inherit; 
+  }
+  
+  
+  .tab-label {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: inherit; 
+  }
+  
+  
+  .tab-button:hover {
+    --color: #ff6600; 
+  }
+  
+  
+  .tab-button[selected] {
+    --color-selected: #ff6600; 
+    font-weight: bold;
+  }
+  
+ 
+  .tab-button[selected] .tab-icon,
+  .tab-button[selected] .tab-label {
+    color: #ff6600;
+   
+  }

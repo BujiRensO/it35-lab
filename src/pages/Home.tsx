@@ -17,6 +17,7 @@ import {
 import { IonReactRouter } from '@ionic/react-router';
 import { bookOutline, search, star } from 'ionicons/icons';
 import { Route, Redirect } from 'react-router';
+import './Home.css';
 
 import Favorites from './home-tabs/Favorites';
 import Feed from './home-tabs/Feed';
@@ -33,12 +34,12 @@ import Search from './home-tabs/Search';
     return (
       <IonReactRouter>
         <IonTabs>
-          <IonTabBar slot="bottom">
+          <IonTabBar slot="bottom"  >
 
             {tabs.map((item, index) => (
-              <IonTabButton key={index} tab={item.tab} href={item.url}>
-                <IonIcon icon={item.icon} />
-                <IonLabel>{item.name}</IonLabel>
+              <IonTabButton key={index} tab={item.tab} href={item.url} className="tab-button">
+                <IonIcon icon={item.icon}  className="tab-icon"/>
+                <IonLabel className="tab-label">{item.name}</IonLabel>
               </IonTabButton>
             ))}
             
