@@ -117,7 +117,7 @@ const Register: React.FC = () => {
       value={username}
       onIonChange={e => setUsername(e.detail.value!)}
     />
-
+<br />
     <IonInput
       className="input-field"
       label="First Name"
@@ -128,7 +128,7 @@ const Register: React.FC = () => {
       value={firstName}
       onIonChange={e => setFirstName(e.detail.value!)}
     />
-
+<br />
     <IonInput
       className="input-field"
       label="Last Name"
@@ -139,7 +139,7 @@ const Register: React.FC = () => {
       value={lastName}
       onIonChange={e => setLastName(e.detail.value!)}
     />
-
+<br />
     <IonInput
       className="input-field"
       label="Email"
@@ -150,7 +150,7 @@ const Register: React.FC = () => {
       value={email}
       onIonChange={e => setEmail(e.detail.value!)}
     />
-
+<br />
     <IonInput
       className="input-field password-input"
       label="Password"
@@ -163,7 +163,7 @@ const Register: React.FC = () => {
     >
       <IonInputPasswordToggle slot="end" />
     </IonInput>
-
+    <br />
     <IonInput
       className="input-field password-input"
       label="Confirm Password"

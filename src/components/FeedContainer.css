@@ -5,19 +5,19 @@
   --ion-font-family: 'Poppins', sans-serif;
   --post-orange: #ff6600;
   --post-light-orange: #ff7f50;
-  --post-dark-orange: #772000;
-  --post-shadow: rgba(255, 127, 80, 0.3);
+  --post-dark-orange: #ff7f50;
+  --post-shadow: rgba(255, 205, 80, 0.3);
 }
 
 /* Ensure all elements are visible by default */
 ion-content {
-  --background: #ffffff !important;
+  --background: #000000 !important;
   color: #000000 !important;
 }
 
 /* Force card visibility */
 ion-card {
-  background: white !important;
+  background: rgb(47, 47, 47) !important;
   opacity: 1 !important;
   visibility: visible !important;
   transition: none !important;
@@ -38,7 +38,7 @@ ion-card {
   box-shadow: 0 4px 12px var(--post-shadow) !important;
   border-radius: 12px !important;
   margin: 16px !important;
-  background: white !important;
+  background: rgb(29, 29, 29) !important;
 }
 
 .post-card2 {
@@ -46,7 +46,7 @@ ion-card {
   box-shadow: 0 2px 5px var(--post-shadow) !important;
   border-radius: 12px !important;
   margin: 16px !important;
-  background: white !important;
+  background: rgb(32, 32, 32) !important;
 }
 
 .post-title {
@@ -64,7 +64,7 @@ ion-card {
   --placeholder-color: #ffa07a !important;
   font-size: 1rem !important;
   margin: 8px 0 !important;
-  background: white !important;
+  background: rgb(39, 39, 39) !important;
   border-radius: 8px !important;
   padding: 8px !important;
 }
@@ -90,7 +90,7 @@ ion-card {
 .photo-preview-container {
   position: relative !important;
   margin: 12px 0 !important;
-  background: #f8f8f8 !important;
+  background: #292929 !important;
   border-radius: 8px !important;
   padding: 8px !important;
 }
@@ -101,7 +101,7 @@ ion-card {
   border-radius: 8px !important;
   display: block !important;
   margin: 0 auto !important;
-  background: white !important;
+  background: rgb(30, 30, 30) !important;
   border: 1px solid #eee !important;
 }
 
@@ -111,12 +111,12 @@ ion-card {
   border-radius: 8px !important;
   margin: 12px auto !important;
   display: block !important;
-  background: white !important;
+  background: rgb(0, 0, 0) !important;
 }
 
 /* Modal Styles */
 ion-modal {
-  --background: white !important;
+  --background: rgb(0, 0, 0) !important;
 }
 
 ion-modal ion-content {
