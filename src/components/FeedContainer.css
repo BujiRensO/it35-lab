@@ -1,95 +1,136 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+/* Font Import & Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-.fontstyle1{
-    font-family: 'Poppins';
-    font-weight: bold;
-    font-size:large;
-    color: rgb(244, 171, 0);
-    text-shadow: 50px;
-
+:root {
+  --ion-font-family: 'Poppins', sans-serif;
+  --post-orange: #ff6600;
+  --post-light-orange: #ff7f50;
+  --post-dark-orange: #772000;
+  --post-shadow: rgba(255, 127, 80, 0.3);
 }
 
+/* Ensure all elements are visible by default */
+ion-content {
+  --background: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Force card visibility */
+ion-card {
+  background: white !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: none !important;
+}
+
+/* Text Styles */
+.fontstyle1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700 !important;
+  font-size: 1.2rem !important;
+  color: rgb(244, 171, 0) !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Post Cards */
 .post-card {
-    border: 2px solid #ff7f50;
-    box-shadow: 0 4px 12px rgba(255, 127, 80, 0.3);
-    border-radius: 12px;
-    overflow: hidden;
-  }
-  
-  .post-card2 {
-    border: 2px solid #772000;
-    box-shadow: 0 2px 5px rgba(255, 127, 80, 0.3);
-    border-radius: 12px;
-    overflow: hidden;
-  }
+  border: 2px solid var(--post-light-orange) !important;
+  box-shadow: 0 4px 12px var(--post-shadow) !important;
+  border-radius: 12px !important;
+  margin: 16px !important;
+  background: white !important;
+}
 
-  .post-title {
-    color: #ff6600;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .post-input {
-    --highlight-color-focused: #ff6600;
-    --border-color: #ff7f50;
-    --placeholder-color: #ffa07a;
-    font-size: 1rem;
-  }
-  
-  .post-button-container {
-    display: flex;
-    justify-content: flex-end;
-    padding: 0.5rem;
-  }
-  
-  .post-button {
-    --background: #ff6600;
-    --color: white;
-    --background-activated: #e65c00;
-    --border-radius: 10px;
-    font-weight: 600;
-    padding: 0.5rem 1.2rem;
-  }
+.post-card2 {
+  border: 2px solid var(--post-dark-orange) !important;
+  box-shadow: 0 2px 5px var(--post-shadow) !important;
+  border-radius: 12px !important;
+  margin: 16px !important;
+  background: white !important;
+}
 
+.post-title {
+  color: var(--post-orange) !important;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  padding: 8px 0 !important;
+}
 
-  .photo-preview-container {
-    position: relative;
-    margin-top: 12px;
-  }
-  
-  .photo-preview {
-    max-width: 100%;
-    max-height: 300px;
-    border-radius: 8px;
-    display: block;
-  }
-  
-  .post-photo {
-    max-width: 100%;
-    max-height: 400px;
-    border-radius: 8px;
-    margin-top: 12px;
-  }
-  
-  .post-button-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 16px 16px;
-  }
-  
-  .photo-upload-button {
-    margin: 16px;
-  }
-  
-  .photo-preview-container ion-button {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    --padding-start: 0;
-    --padding-end: 0;
-    --padding-top: 0;
-    --padding-bottom: 0;
-    width: 32px;
-    height: 32px;
-  }
+/* Input Fields */
+.post-input {
+  --highlight-color-focused: var(--post-orange) !important;
+  --border-color: var(--post-light-orange) !important;
+  --placeholder-color: #ffa07a !important;
+  font-size: 1rem !important;
+  margin: 8px 0 !important;
+  background: white !important;
+  border-radius: 8px !important;
+  padding: 8px !important;
+}
+
+/* Buttons */
+.post-button-container {
+  display: flex !important;
+  justify-content: flex-end !important;
+  padding: 0.5rem !important;
+  background: transparent !important;
+}
+
+.post-button {
+  --background: var(--post-orange) !important;
+  --color: white !important;
+  --background-activated: #e65c00 !important;
+  --border-radius: 10px !important;
+  font-weight: 600 !important;
+  margin-left: 8px !important;
+}
+
+/* Photo Handling */
+.photo-preview-container {
+  position: relative !important;
+  margin: 12px 0 !important;
+  background: #f8f8f8 !important;
+  border-radius: 8px !important;
+  padding: 8px !important;
+}
+
+.photo-preview {
+  max-width: 100% !important;
+  max-height: 300px !important;
+  border-radius: 8px !important;
+  display: block !important;
+  margin: 0 auto !important;
+  background: white !important;
+  border: 1px solid #eee !important;
+}
+
+.post-photo {
+  max-width: 100% !important;
+  max-height: 400px !important;
+  border-radius: 8px !important;
+  margin: 12px auto !important;
+  display: block !important;
+  background: white !important;
+}
+
+/* Modal Styles */
+ion-modal {
+  --background: white !important;
+}
+
+ion-modal ion-content {
+  --padding-start: 16px !important;
+  --padding-end: 16px !important;
+  --padding-top: 16px !important;
+  --padding-bottom: 16px !important;
+}
+
+/* Utility Classes */
+.force-visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+  background: white !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
